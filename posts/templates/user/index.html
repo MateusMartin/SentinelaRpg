@@ -1,0 +1,12 @@
+{% load socialaccount %}
+{% providers_media_js %}
+
+<head>
+
+</head>
+
+<body>
+<button><a href="#">Google</button>
+<button><a href="{% provider_login_url "facebook" method="oauth2" %}">Facebooka</button>
+</body>
+
