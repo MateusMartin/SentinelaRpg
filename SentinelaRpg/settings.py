@@ -134,7 +134,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 LOGIN_URL = "/account/login"
-LOGIN_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "/MenuPrincipal"
 AUTH_USER_MODEL = "localusers.localusers"
 SITE_ID = 3
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

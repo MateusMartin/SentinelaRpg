@@ -22,7 +22,9 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^account/', include('allauth.urls')),
-    path('', TemplateView.as_view(template_name='user/index.html')),
+   
+    url('MenuPrincipal/', TemplateView.as_view(template_name='user/logado.html')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 
 
